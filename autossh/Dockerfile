@@ -4,7 +4,8 @@ FROM ${BUILD_FROM}
 
 ENV LANG=C.UTF-8
 
-RUN apk add --no-cache tzdata openssh vim curl autossh
+RUN echo "nameserver 8.8.8.8" > /etc/resolv.conf && \
+    apk add --no-cache tzdata openssh vim curl autossh
 
 COPY rootfs /
 RUN chmod a+x /etc/services.d/autossh/run /etc/services.d/autossh/finish
