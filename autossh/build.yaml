@@ -1,0 +1,6 @@
+build_from:
+  aarch64: ghcr.io/maioranav/autossh-hassos/aarch64:latest
+  amd64: ghcr.io/maioranav/autossh-hassos/amd64:latest
+  armv7: ghcr.io/maioranav/autossh-hassos/armv7:latest
+  armhf: ghcr.io/maioranav/autossh-hassos/armhf:latest
+  i386: ghcr.io/maioranav/autossh-hassos/i386:latest
